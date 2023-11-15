@@ -1,0 +1,113 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Tahaluf\\8. QA practical\\4.Automation\\finaltask\\AutomationTestingTask\\AutomationTestingTask\\AutomationTestingTask.csproj": {}
+  },
+  "projects": {
+    "F:\\Tahaluf\\8. QA practical\\4.Automation\\finaltask\\AutomationTestingTask\\AutomationTestingTask\\AutomationTestingTask.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Tahaluf\\8. QA practical\\4.Automation\\finaltask\\AutomationTestingTask\\AutomationTestingTask\\AutomationTestingTask.csproj",
+        "projectName": "AutomationTestingTask",
+        "projectPath": "F:\\Tahaluf\\8. QA practical\\4.Automation\\finaltask\\AutomationTestingTask\\AutomationTestingTask\\AutomationTestingTask.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "F:\\Tahaluf\\8. QA practical\\4.Automation\\finaltask\\AutomationTestingTask\\AutomationTestingTask\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Aardvark.Base": {
+              "target": "Package",
+              "version": "[5.2.25, )"
+            },
+            "Bytescout.Spreadsheet": {
+              "target": "Package",
+              "version": "[4.7.1.2054, )"
+            },
+            "ExtentReports": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "IKVM": {
+              "target": "Package",
+              "version": "[8.6.2, )"
+            },
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "Magick.NET-Q16-AnyCPU": {
+              "target": "Package",
+              "version": "[13.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[115.0.5790.17000, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

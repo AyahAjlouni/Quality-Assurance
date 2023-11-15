@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/spark/css/spark-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa ">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary"></span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">9/24/2023 7:13:18 PM</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row test-view">
+    <div class="test-list">
+        <div class="test-list-tools">
+            <ul class="tools pull-left">
+                <li>
+                    <a href="">
+                        <span class="font-size-14">Tests</span>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>						<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																														<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+								            </ul>
+        </div>
+        <div class="test-list-wrapper scrollable">
+            <ul class="test-list-item">
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">AddBillCategory_Invalid</p> 
+								<p class="duration text-sm">0h:0m:44s+868ms</p> 
+								<span class="datetime">19:05:41 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">AddBillCategory_Invalid</h5>
+										<span class='badge badge-success'>9/24/2023 7:05:41 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:06:25 PM</span>
+										<span class='badge badge-default'>0h:0m:44s+868ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										check that admin can't add new bills on categories with invalid data  
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:06:08</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>19:06:23</td>
+				<td>
+text cannot be null (Parameter 'text')									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-exclamation text-error"></i></td>
+				<td>19:06:23</td>
+				<td>
+location cant be null									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:06:25</td>
+				<td>
+Admin , 12345									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='D:\OneDrive-9-12-2023\Automation\Automation reports\images\\6d683be4-47f9-4014-9089-623a63b4e962_image.png' src='D:\OneDrive-9-12-2023\Automation\Automation reports\images\\6d683be4-47f9-4014-9089-623a63b4e962_image.png' data-src='D:\OneDrive-9-12-2023\Automation\Automation reports\images\\6d683be4-47f9-4014-9089-623a63b4e962_image.png'>						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="2"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">AddBillCategory_Valid()</p> 
+								<p class="duration text-sm">0h:0m:46s+543ms</p> 
+								<span class="datetime">19:06:43 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">AddBillCategory_Valid()</h5>
+										<span class='badge badge-success'>9/24/2023 7:06:43 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:07:30 PM</span>
+										<span class='badge badge-default'>0h:0m:46s+543ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										check that admin able to add new bills on categories randomly
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:07:08</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:07:30</td>
+				<td>
+add bill category test case successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="3"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">AddBillCategory_Valid()</p> 
+								<p class="duration text-sm">0h:0m:46s+981ms</p> 
+								<span class="datetime">19:08:03 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">AddBillCategory_Valid()</h5>
+										<span class='badge badge-success'>9/24/2023 7:08:03 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:08:50 PM</span>
+										<span class='badge badge-default'>0h:0m:46s+981ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										check that admin able to add new bills on categories randomly
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:08:28</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:08:50</td>
+				<td>
+add bill category test case successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="4"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Changename_Invalid ()</p> 
+								<p class="duration text-sm">0h:0m:34s+171ms</p> 
+								<span class="datetime">19:09:22 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Changename_Invalid ()</h5>
+										<span class='badge badge-success'>9/24/2023 7:09:22 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:09:56 PM</span>
+										<span class='badge badge-default'>0h:0m:34s+171ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify that an admin cannot copmlete update name process if the full name field is empty
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:09:48</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>19:09:54</td>
+				<td>
+text cannot be null (Parameter 'text')									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-exclamation text-error"></i></td>
+				<td>19:09:54</td>
+				<td>
+full name field is empty									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:09:56</td>
+				<td>
+Admin , 12345									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='D:\OneDrive-9-12-2023\Automation\Automation reports\images\\7128bb18-787a-49a2-ac09-d97011d3c500_image.png' src='D:\OneDrive-9-12-2023\Automation\Automation reports\images\\7128bb18-787a-49a2-ac09-d97011d3c500_image.png' data-src='D:\OneDrive-9-12-2023\Automation\Automation reports\images\\7128bb18-787a-49a2-ac09-d97011d3c500_image.png'>						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="5"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Changename_Valid()</p> 
+								<p class="duration text-sm">0h:0m:43s+811ms</p> 
+								<span class="datetime">19:10:14 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Changename_Valid()</h5>
+										<span class='badge badge-success'>9/24/2023 7:10:14 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:10:57 PM</span>
+										<span class='badge badge-default'>0h:0m:43s+811ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify that an admin can change their name to a valid name.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:10:38</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:10:57</td>
+				<td>
+Change name test case successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="6"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Changename_Valid()</p> 
+								<p class="duration text-sm">0h:0m:43s+651ms</p> 
+								<span class="datetime">19:11:15 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Changename_Valid()</h5>
+										<span class='badge badge-success'>9/24/2023 7:11:15 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:11:58 PM</span>
+										<span class='badge badge-default'>0h:0m:43s+651ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify that an admin can change their name to a valid name.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:39</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:58</td>
+				<td>
+Change name test case successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="7"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Changename_incorrectpass()</p> 
+								<p class="duration text-sm">0h:0m:45s+228ms</p> 
+								<span class="datetime">19:12:16 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Changename_incorrectpass()</h5>
+										<span class='badge badge-success'>9/24/2023 7:12:16 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:13:01 PM</span>
+										<span class='badge badge-default'>0h:0m:45s+228ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify that an admin cannot change their name if they enter an incorrect password
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:12:41</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:12:58</td>
+				<td>
+Change name with incorrect password test case successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>19:12:59</td>
+				<td>
+Assert.AreEqual failed. Expected:<Oday Alsanad_Admin>. Actual:<Oday Alsanad22>. Name still the same Oday Alsanad_Admin and the password (12356) is not correct									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-exclamation text-error"></i></td>
+				<td>19:12:59</td>
+				<td>
+Assert.AreEqual failed. Expected:<Oday Alsanad_Admin>. Actual:<Oday Alsanad22>. Name still the same Oday Alsanad_Admin and the password (12356) is not correct									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:13:01</td>
+				<td>
+Admin , 12356									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='D:\OneDrive-9-12-2023\Automation\Automation reports\images\\b6b8b877-c414-4180-9a13-9c16e5863a90_image.png' src='D:\OneDrive-9-12-2023\Automation\Automation reports\images\\b6b8b877-c414-4180-9a13-9c16e5863a90_image.png' data-src='D:\OneDrive-9-12-2023\Automation\Automation reports\images\\b6b8b877-c414-4180-9a13-9c16e5863a90_image.png'>						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="8"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">SearchByDate_with days not have result</p> 
+								<p class="duration text-sm">0h:0m:45s+275ms</p> 
+								<span class="datetime">19:13:18 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">SearchByDate_with days not have result</h5>
+										<span class='badge badge-success'>9/24/2023 7:13:18 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:14:04 PM</span>
+										<span class='badge badge-default'>0h:0m:45s+275ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify that the search results aren’t displayed when no results are found.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:13:45</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:14:04</td>
+				<td>
+Choose start date and end date successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="9"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">SearchByDate_valid()</p> 
+								<p class="duration text-sm">0h:0m:49s+308ms</p> 
+								<span class="datetime">19:14:24 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">SearchByDate_valid()</h5>
+										<span class='badge badge-success'>9/24/2023 7:14:24 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:15:13 PM</span>
+										<span class='badge badge-default'>0h:0m:49s+308ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify that the user enters a valid start date and end date and search results are displayed correctly.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:14:51</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:15:13</td>
+				<td>
+Choose start date and end date successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="10"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">SearchByDate_valid()</p> 
+								<p class="duration text-sm">0h:0m:49s+383ms</p> 
+								<span class="datetime">19:16:11 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">SearchByDate_valid()</h5>
+										<span class='badge badge-success'>9/24/2023 7:16:11 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:17:01 PM</span>
+										<span class='badge badge-default'>0h:0m:49s+383ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify that the user enters a valid start date and end date and search results are displayed correctly.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:16:38</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:17:01</td>
+				<td>
+Choose start date and end date successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="11"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">SearchByDate_invalid()</p> 
+								<p class="duration text-sm">0h:0m:49s+544ms</p> 
+								<span class="datetime">19:18:03 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">SearchByDate_invalid()</h5>
+										<span class='badge badge-success'>9/24/2023 7:18:03 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:18:53 PM</span>
+										<span class='badge badge-default'>0h:0m:49s+544ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify that the search results are not displayed if the start date is after the end date
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:18:30</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:18:53</td>
+				<td>
+Choose start date and end date successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="12"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">SearchByName()</p> 
+								<p class="duration text-sm">0h:0m:31s+154ms</p> 
+								<span class="datetime">19:19:10 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">SearchByName()</h5>
+										<span class='badge badge-success'>9/24/2023 7:19:10 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:19:41 PM</span>
+										<span class='badge badge-default'>0h:0m:31s+154ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										verify that the search results are displayed to the same category name
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:19:35</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:19:41</td>
+				<td>
+Choose category test case successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="13"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">SearchByName()</p> 
+								<p class="duration text-sm">0h:0m:31s+050ms</p> 
+								<span class="datetime">19:19:59 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">SearchByName()</h5>
+										<span class='badge badge-success'>9/24/2023 7:19:59 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:20:30 PM</span>
+										<span class='badge badge-default'>0h:0m:31s+050ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										verify that the search results are displayed to the same category name
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:20:23</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:20:30</td>
+				<td>
+Choose category test case successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="14"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">SearchByName and date()</p> 
+								<p class="duration text-sm">0h:0m:45s+408ms</p> 
+								<span class="datetime">19:20:47 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">SearchByName and date()</h5>
+										<span class='badge badge-success'>9/24/2023 7:20:47 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:21:32 PM</span>
+										<span class='badge badge-default'>0h:0m:45s+408ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										verify that the search results are displayed to the same category name
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:21:12</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:21:32</td>
+				<td>
+Choose name ,start date and end date successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="15"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">SearchByNameRandomly()</p> 
+								<p class="duration text-sm">0h:0m:33s+245ms</p> 
+								<span class="datetime">19:22:21 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">SearchByNameRandomly()</h5>
+										<span class='badge badge-success'>9/24/2023 7:22:21 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:22:54 PM</span>
+										<span class='badge badge-default'>0h:0m:33s+245ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Check that the search results are displayed to the same category name that choosen randomly
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:22:45</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:22:54</td>
+				<td>
+Choose category test case successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="16"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">SearchByNameRandomly()</p> 
+								<p class="duration text-sm">0h:0m:33s+143ms</p> 
+								<span class="datetime">19:23:19 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">SearchByNameRandomly()</h5>
+										<span class='badge badge-success'>9/24/2023 7:23:19 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:23:52 PM</span>
+										<span class='badge badge-default'>0h:0m:33s+143ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Check that the search results are displayed to the same category name that choosen randomly
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:23:44</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:23:52</td>
+				<td>
+Choose category test case successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="17"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">SearchByName_withcountpay</p> 
+								<p class="duration text-sm">0h:0m:37s+021ms</p> 
+								<span class="datetime">19:24:18 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">SearchByName_withcountpay</h5>
+										<span class='badge badge-success'>9/24/2023 7:24:18 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:24:55 PM</span>
+										<span class='badge badge-default'>0h:0m:37s+021ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										check the number of pay inside category same with count pay
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:24:42</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:24:55</td>
+				<td>
+Choose category test case successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="18"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">SearchByName_withcountpay</p> 
+								<p class="duration text-sm">0h:0m:37s+289ms</p> 
+								<span class="datetime">19:25:33 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">SearchByName_withcountpay</h5>
+										<span class='badge badge-success'>9/24/2023 7:25:33 PM</span>
+										<span class='badge badge-danger'>9/24/2023 7:26:10 PM</span>
+										<span class='badge badge-default'>0h:0m:37s+289ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										check the number of pay inside category same with count pay
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:25:57</td>
+				<td>
+user login successfuly									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:26:10</td>
+				<td>
+Choose category test case successfuly									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="test-content scrollable">
+        <div class="test-content-tools">
+            <ul>
+                <li>
+                    <a class="back-to-test" href="javascript:void(0)">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="test-content-detail">
+            <div class="detail-body"></div>
+        </div>
+    </div>
+</div>
+										<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tests</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='parent-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='83.33333333333334%'>
+	                    <b>15</b> tests passed
+                    </small></div>
+	                <div>
+	                    <small data-tooltip='16.666666666666664%'><b>3</b> tests failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+			</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Tests</h6>
+							<h2 class="font-size-28 font-weight-light">18</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+								<span>83.33%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Start</h6>
+							<h6 class="font-weight-light">9/24/2023 7:13:18 PM</h6>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Duration</h6>
+							<h6 class="font-weight-light">00:13:39.3849905</h6>
+							<span class="text-semibold text-danger font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<p class="">Duration</p>
+							<h6 class="font-weight-light">00:13:39.3863191</h6>
+							<span class="text-semibold font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+							</div>
+</div>
+<script>
+	var statusGroup = {
+    parentCount: 18,
+		passParent: 15,
+		failParent: 3,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 3,
+		childCount: 0,
+		passChild: 0,
+		failChild: 0,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 0,
+		grandChildCount: 0,
+		passGrandChild: 0,
+		failGrandChild: 0,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 0,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 0,
+	};
+</script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@cc89904c1a12065be1d08fc4994a258ef01b12bd/spark/js/scripts.js"></script>
+<script type='text/javascript'>
+	
+</script>
+</body>
+
+</html>
